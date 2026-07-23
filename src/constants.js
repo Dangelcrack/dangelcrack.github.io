@@ -20,6 +20,12 @@ import {
   postgresql,
   mysql,
   github,
+  pokealert,
+  agrodatalab,
+  laravel,
+  wordpress,
+  prestashop,
+  php,
 } from "./assets";
 
 export const navLinks = [
@@ -42,22 +48,26 @@ export const linkTreeNavLinks = [];
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: html,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: java,
   },
   {
     title: "Python / Django Developer",
-    icon: creator,
+    icon: django,
   },
   {
     title: "Full Stack Developer",
-    icon: mobile,
+    icon: angular,
   },
 ];
 
+// Recortado a 12 tecnologías para no superar el límite de contextos WebGL
+// activos del navegador (cada BallCanvas crea su propio contexto Three.js).
+// Quitadas: MongoDB, HTML & CSS, Git, JavaScript (implícitas o poco
+// diferenciadoras frente al resto del stack real de tu CV).
 const technologies = [
   {
     name: "Python",
@@ -88,24 +98,24 @@ const technologies = [
     icon: mysql,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Docker",
     icon: docker,
   },
   {
-    name: "Git",
-    icon: git,
+    name: "WordPress",
+    icon: wordpress,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "PrestaShop",
+    icon: prestashop,
   },
   {
-    name: "HTML & CSS",
-    icon: html,
+    name: "Laravel",
+    icon: laravel,
+  },
+  {
+    name: "PHP",
+    icon: php,
   },
 ];
 
@@ -113,7 +123,7 @@ const experiences = [
   {
     title: "Desarrollador Web — Prácticas DAM",
     company_name: "Qanet · Puente Genil, Andalucía (Remoto)",
-    icon: web,
+    icon: laravel,
     iconBg: "#383E56",
     date: "Marzo 2025 - Junio 2025",
     points: [
@@ -126,8 +136,8 @@ const experiences = [
   {
     title: "Técnico Web — Soporte y Desarrollo",
     company_name: "Eccuo Marketing Digital · Córdoba (Prácticas ASIR)",
-    icon: backend,
-    iconBg: "#E6DEDD",
+    icon: wordpress,
+    iconBg: "#ffffff",
     date: "Marzo 2022 - Junio 2022",
     points: [
       "Gestioné y optimicé 5 sitios en WordPress y PrestaShop en producción, mejorando la velocidad de carga y la retención de usuarios.",
@@ -155,11 +165,15 @@ const projects = [
       "Aplicación Django para monitorización en tiempo real del mercado Pokémon TCG, con alertas de precio personalizadas. Tareas periódicas con Celery + Redis en local; en producción, adaptadas a endpoints HTTP disparados por cronjob externo para sortear las limitaciones del free tier de Render. Notificaciones vía SendGrid. CI con GitHub Actions: lint con ruff y suite de tests con pytest.",
     tags: [
       { name: "django", color: "green-text-gradient" },
-      { name: "celery-redis", color: "blue-text-gradient" },
-      { name: "postgresql", color: "pink-text-gradient" },
+      { name: "drf", color: "blue-text-gradient" },
+      { name: "celery-redis", color: "pink-text-gradient" },
+      { name: "postgresql", color: "orange-text-gradient" },
+      { name: "sendgrid", color: "green-text-gradient" },
+      { name: "pytest", color: "blue-text-gradient" },
+      { name: "github-actions", color: "pink-text-gradient" },
     ],
-    image: creator,
-    source_code_link: "https://github.com/Dangelcrack",
+    image: pokealert,
+    source_code_link: "https://pokealert.onrender.com/",
   },
   {
     name: "AgroDataLab",
@@ -169,35 +183,11 @@ const projects = [
     tags: [
       { name: "django", color: "green-text-gradient" },
       { name: "pandas", color: "blue-text-gradient" },
+      { name: "jupyter", color: "orange-text-gradient" },
       { name: "postgresql", color: "pink-text-gradient" },
     ],
-    image: web,
-    source_code_link: "https://github.com/Dangelcrack",
-  },
-  {
-    name: "Sistema Integral Tienda de Electrónica",
-    upper_title: "TFG DAM",
-    description:
-      "Backend en Java con Hibernate: API REST completa con operaciones CRUD, roles diferenciados (administrador, ventas, cliente) y control de accesos. Frontend en TypeScript desplegado en Firebase con catálogo de +500 productos, carrito de compra y portal de cliente. Panel de administración con reportes de ventas y métricas de inventario.",
-    tags: [
-      { name: "java-hibernate", color: "green-text-gradient" },
-      { name: "typescript", color: "blue-text-gradient" },
-      { name: "firebase", color: "pink-text-gradient" },
-    ],
-    image: mobile,
-    source_code_link: "https://github.com/Dangelcrack",
-  },
-  {
-    name: "ShopCardApi + ShopCardApplication",
-    description:
-      "API REST en Java con endpoints documentados para la gestión de tarjetas, junto con un cliente TypeScript/Angular que la consume.",
-    tags: [
-      { name: "java", color: "green-text-gradient" },
-      { name: "angular", color: "blue-text-gradient" },
-      { name: "mysql", color: "pink-text-gradient" },
-    ],
-    image: backend,
-    source_code_link: "https://github.com/Dangelcrack",
+    image: agrodatalab,
+    source_code_link: "https://angelpablo2.alwaysdata.net/",
   },
 ];
 

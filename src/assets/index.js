@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import pokealert from "./pokealert.png";
+import agrodatalab from "./agrodatalab.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -29,6 +31,10 @@ import instagram from "./instagram.svg";
 import me from "./me.png";
 import phone from "./phone.svg";
 import youtube from "./youtube.svg";
+import laravel from "./tech/laravel.png";
+import wordpress from "./tech/wordpress.png";
+import prestashop from "./tech/prestashop.png";
+import php from "./tech/php.png";
 
 export {
     angular,
@@ -44,6 +50,8 @@ export {
     github,
     menu,
     close,
+    pokealert,
+    agrodatalab,
     css,
     docker,
     git,
@@ -61,4 +69,8 @@ export {
     me,
     phone,
     youtube,
+    laravel,
+    wordpress,
+    prestashop,
+    php,
 };

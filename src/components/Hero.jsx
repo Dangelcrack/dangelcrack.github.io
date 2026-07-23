@@ -9,7 +9,7 @@ const Hero = () => {
                 className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
             >
                 <div className="flex flex-col justify-center items-center mt-5">
-                    <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+                    <div className="w-5 h-5 rounded-full bg-[#2DD4BF]" />
                     <div className="w-1 sm:h-80 h-40 violet-gradient" />
                 </div>
 
@@ -20,7 +20,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="text-[#915EFF]"
+                            className="text-[#2DD4BF]"
                         >
                             Ángel Guerrero
                         </motion.span>

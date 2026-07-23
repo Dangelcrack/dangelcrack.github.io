@@ -41,12 +41,18 @@ const About = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
-                Desarrollador backend junior con triple formación técnica (DAM, ASIR y especialización en
-                Python, con nota media de 8,5). Experiencia profesional real en entorno de empresa con
-                PHP/Laravel y MySQL, y especialización en el desarrollo de APIs REST robustas y backend
-                escalable con Django, Django REST Framework y Java/Hibernate. Mi formación complementaria en
-                sistemas me permite entender el stack completo: desde la arquitectura hasta la infraestructura
-                y el despliegue con Docker.
+                Desarrollador backend junior especializado en Python/Django, con experiencia real en
+                producción: APIs REST con Django REST Framework, y una plataforma de gestión de licencias en
+                Laravel/PHP que redujo un 40% el tiempo de procesos en Qanet.
+            </motion.p>
+
+            <motion.p
+                variants={fadeIn("", "", 0.2, 1)}
+                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            >
+                Formación técnica triple (DAM, ASIR y especialización en Python, nota media 8,5) y
+                experiencia complementaria con Java/Hibernate y MySQL. La base en sistemas me da visión de
+                stack completo: de la arquitectura al despliegue con Docker.
             </motion.p>
 
             <div className="mt-20 flex flex-wrap gap-10">

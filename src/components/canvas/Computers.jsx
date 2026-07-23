@@ -15,10 +15,11 @@ const Computers = ({ isMobile, yValue }) => {
                 angle={0.12}
                 penumbra={1}
                 intensity={1}
+                color="#38BDF8"
                 castShadow
                 shadow-mapSize={1024}
             />
-            <pointLight intensity={1} />
+            <pointLight intensity={1} color="#2DD4BF" />
             <primitive
                 object={computer.scene}
                 scale={isMobile ? 0.33 : 0.7} // BEGIN: Adjust scale for small screens

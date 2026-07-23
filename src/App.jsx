@@ -6,9 +6,13 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="relative z-0 bg-primary">
-                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-                    <Navbar />
-                    <Hero />
+                <div className="relative">
+                    <div className="absolute inset-0 bg-hero-pattern bg-cover bg-no-repeat bg-center" />
+                    <div className="relative">
+                        <Navbar />
+                        <Hero />
+                    </div>
+                    <div className="pointer-events-none absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-primary to-transparent" />
                 </div>
                 <About />
                 <Works />
