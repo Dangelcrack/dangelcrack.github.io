@@ -50,7 +50,7 @@ const Hero = () => {
                             </button>
                         </a>
                         <a
-                            href="/Angel_Guerrero_CV.pdf"
+                            href="/Angel_Guerrero_Backend_Developer_CV.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mb-4 sm:mb-0 sm:mr-4 green-pink-gradient p-[2px] rounded-[10px] shadow-card"
